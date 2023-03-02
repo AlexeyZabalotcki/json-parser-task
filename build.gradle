@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.clevertec.zabalotcki'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'ch.qos.logback:logback-classic:1.2.6'
+    // SLF4J bridge for Logback
+    implementation 'org.slf4j:slf4j-log4j12:1.7.30'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
